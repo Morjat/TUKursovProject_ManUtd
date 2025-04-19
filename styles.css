@@ -1,0 +1,199 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #1b1b1b;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 1px;
+}
+
+.top-header {
+  background-color: #1b1b1b;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  position: relative;
+}
+
+.logo-left {
+  position: absolute;
+  left: 20px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  
+}
+
+.header-text {
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+
+.navbar {
+  background-color: #DA291C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  gap: 30px;
+  
+}
+
+
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 50px;
+  flex-wrap: wrap;
+  
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.nav-menu li a:hover {
+  text-decoration:underline;
+}
+.nav-menu li a.active {
+  border-bottom: 3px solid white;
+  padding-bottom: 5px;
+  color: white;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+}
+
+.intro {
+  flex: 3;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Хедъри на секции */
+.main-content h2,
+.main-content h3 {
+  color: white;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+/* Интро текст */
+.intro p {
+  color: #cccccc;
+  font-size: 1rem;
+  max-width: 700px;
+}
+
+/* Новини - карти */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: #2c2c2c;
+  border-left: 5px solid #DA291C;
+  padding: 15px;
+  border-radius: 6px;
+  flex: 1 1 45%;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Списъци с мачове и резултати */
+.fixtures ul,
+.results ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fixtures li,
+.results li {
+  background-color: #2c2c2c;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+/* Играч на седмицата */
+.featured-player {
+  background-color: #2c2c2c;
+  padding: 20px;
+  border-left: 5px solid #FDB913;
+  border-radius: 6px;
+  color: white;
+}
+
+/* Анкета */
+.poll form {
+  color: white;
+}
+.poll p {
+  color: white;
+}
+
+.poll label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Бутон */
+.cta-button {
+  background-color: #DA291C;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #c01f19;
+}
+
+
+
+footer {
+  background-color: #1b1b1b;
+  color: #f9f9f9;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 50px;
+  border-top: 4px solid #DA291C;
+}
+.wrapper {
+  flex: 1;
+}
