@@ -1,0 +1,157 @@
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Манчестър Юнайтед</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <style>
+    body.fade-out {
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    body.fade-in {
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out;
+    }
+    .contact-form form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  resize: vertical;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: white;
+}
+
+.info {
+  color: white;
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.info h3 {
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+.info a {
+  color: #d11d1d;
+  text-decoration: none;
+}
+
+.info a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  background-color: #DA291C;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #b71c1c;
+}
+  </style>
+</head>
+<body class="fade-out">
+  <div class="wrapper">
+  <header class="top-header">
+    <div class="logo-left">
+      <a href="home.html">
+      <img src="logo.png" alt="Лого" class="logo" />
+      </a>
+    </div>
+    <div class="header-text">
+      <h1>Контакти</h1>
+      
+    </div>
+  </header>
+
+  <nav class="navbar">
+   
+    <ul class="nav-menu">
+      <li><a href="home.html">Начало</a></li>
+      <li><a href="players.html">Играчите</a></li>
+      <li><a href="schedule.html">Програма</a></li>
+      <li><a href="gallery.html">Галерия</a></li>
+      <li><a href="contact.html">Контакти</a></li>
+    </ul>
+  </nav>
+  <main class="main-content">
+    <section class="intro">
+      <h2>Контакти с нас</h2>
+      <p>Свържете се с нас за въпроси, предложения или участие във фен клуба.</p>
+    </section>
+
+    <section class="contact-form" style="color:white;">
+      <form>
+        <label for="name">Име:</label><br />
+        <input type="text" id="name" name="name" required><br /><br />
+
+        <label for="email">Имейл:</label><br />
+        <input type="email" id="email" name="email" required><br /><br />
+
+        <label for="message">Съобщение:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+        <button class="cta-button" type="submit">Изпрати</button>
+      </form>
+    </section>
+
+    <section class="info" style="margin-top:40px;">
+      <h3>Адрес</h3>
+      <p style="color:white;">
+        Old Trafford, Sir Matt Busby Way<br />
+        Manchester M16 0RA, United Kingdom
+      </p>
+
+      <h3>Имейл</h3>
+      <p><a href="mailto:mitiradev1@gmail.com" style="color: #DA291C;" target="_blank" rel="noopener noreferrer">mitiradev1@gmail.com</a></p>
+      
+
+      <h3>Социални мрежи</h3>
+      <p>
+        <a href="https://facebook.com/manutd" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://instagram.com/manutd" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://twitter.com/ManUtd" target="_blank" rel="noopener noreferrer">Twitter</a>
+      </p>
+    </section>
+  </main>
+  
+</div>
+  <footer>
+    <p>&copy; 2025 Фен клуб Манчестър Юнайтед. Всички права запазени.</p>
+    <p>Политика за поверителност | Условия за ползване</p>
+    <p>Телефон: +359 88 123 4567</p>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>
